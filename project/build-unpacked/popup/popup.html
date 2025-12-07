@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Chat Export Suite</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="wrap">
+    <h1>Chat Export Suite v3.2</h1>
+    <p>Export the current ChatGPT conversation.</p>
+
+    <button id="btn-pdf">Export as PDF</button>
+    <button id="btn-html">Export as HTML</button>
+    <button id="btn-md">Export as Markdown</button>
+    <button id="btn-txt">Export as Text</button>
+
+    <hr />
+
+    <button id="btn-docx">Export as DOCX</button>
+    <p class="hint">DOCX uses your macOS Quick Action or Converter app.</p>
+
+    <a id="options-link" href="../options/options.html" target="_blank">Open selector options…</a>
+
+    <p id="status"></p>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "name": "macOS Helper v2.0",
+  "modes": {
+    "md-to-docx": {
+      "args": [
+        "inputMarkdownPath",
+        "outputDocxPath"
+      ],
+      "description": "Convert Markdown to DOCX using pandoc."
+    },
+    "md-to-docx-pdf": {
+      "args": [
+        "inputMarkdownPath",
+        "outputDocxPath",
+        "outputPdfPath"
+      ],
+      "description": "Convert Markdown to DOCX, then DOCX to PDF with fallbacks."
+    }
+  },
+  "exitCodes": {
+    "0": "OK",
+    "10": "MD_READ_FAIL \u2013 input markdown missing or invalid arguments",
+    "20": "DOCX_FAIL \u2013 pandoc or DOCX conversion failure",
+    "30": "PDF_FAIL \u2013 all DOCX\u2192PDF fallbacks failed",
+    "40": "FALLBACK_TRIGGERED \u2013 a fallback path succeeded (non-primary route)",
+    "99": "FATAL \u2013 unexpected internal error"
+  },
+  "logDirectory": "~/Documents/CashDevInstallLogs",
+  "logFilePattern": "helper_v2.0_*.log"
+}

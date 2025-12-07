@@ -1,0 +1,15 @@
+{
+  "name": "ChatExportSuite Bundle",
+  "version": "1.1",
+  "created": "2025-12-07T08:34:27.864081Z",
+  "files": [
+    "ChatExportSuite_Installer_v1_1.command",
+    "macos-helper-v2_0/helper.mjs",
+    "macos-helper-v2_0/cli/helper-docx.sh",
+    "macos-helper-v2_0/cli/helper-docx-pdf.sh",
+    "macos-helper-v2_0/schema/helper-schema.json",
+    "integrations/swiftbar/cashdev-hub.5m.sh",
+    "integrations/swiftbar/cashdev-ai.5m.sh",
+    "README_ChatExportSuiteBundle_v1_1.txt"
+  ]
+}

@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Chat Export Suite – Options</title>
+  <link rel="stylesheet" href="options.css" />
+</head>
+<body>
+  <div class="wrap">
+    <h1>Chat Export Suite – Selector Profile</h1>
+    <p>Adjust how messages are detected on ChatGPT pages.</p>
+
+    <label>
+      Message Selector
+      <input id="messageSelector" type="text" />
+    </label>
+
+    <label>
+      Role Attribute
+      <input id="roleAttr" type="text" />
+    </label>
+
+    <div class="buttons">
+      <button id="save">Save</button>
+      <button id="reset">Reset to defaults</button>
+    </div>
+
+    <p class="hint">
+      Defaults are tuned for ChatGPT: <code>div[data-message-author-role]</code> and
+      <code>data-message-author-role</code>.
+    </p>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>
